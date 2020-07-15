@@ -1,0 +1,18 @@
+body {
+    background: rgb(238,18,115);
+    background: linear-gradient(90deg, rgba(238,18,115,1) 0%, rgba(29,10,203,1) 61%);
+
+    width: 100vw;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mask_letter{
+    background-color: lightcoral;
+}
