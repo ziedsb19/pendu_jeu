@@ -6,6 +6,8 @@ function MaskCell (props){
 }
 
 
+
+
 function MaskComponent (props){
   return (
     <div className="mt-5" id="mask">
@@ -28,7 +30,7 @@ function MaskComponent (props){
 
 function Letter(props){
   return (
-    <button className={`col-1 p-3 m-1 bg-light text-center ${props.status}`} disabled= {props.status != ""} onClick={()=>props.click(props.letter)}> {props.letter} </button>
+    <button className={`letter col-1 p-3 m-1 btn bg-light text-center ${props.status}`} disabled= {props.status != ""} onClick={()=>props.click(props.letter)}> {props.letter} </button>
   )
 }
 
@@ -44,7 +46,7 @@ function PlayButton(props){
 function LostMessage (props){
   return (
     <div>
-      <h2 className="text-center mt-4 text-danger"> you have lost :( 
+      <h2 className="text-center mt-4 text-danger"> you have lost 😭 
         <br/>
         the word is {props.word}
       </h2>
@@ -56,8 +58,7 @@ function LostMessage (props){
 function WinMessage (props){
   return (
     <div>
-      <h2 className="text-center mt-4 text-success"> congrats you have won in {props.essais} essais  
-      </h2>
+      <h2 className="text-center mt-4 text-success"> congrats you have won in {props.essais} essais <br></br> 🤓 </h2>
       <PlayButton click={props.click} />
     </div>
   )

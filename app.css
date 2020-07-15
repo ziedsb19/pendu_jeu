@@ -16,3 +16,7 @@ body {
 .mask_letter{
     background-color: lightcoral;
 }
+
+.letter:disabled{
+    cursor: not-allowed
+}
